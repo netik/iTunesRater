@@ -64,6 +64,8 @@
 		A83E130F16D9D9E400FA4930 /* 3techno.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A83E12E316D9D9E400FA4930 /* 3techno.scpt */; };
 		A83E131416DA1D7C00FA4930 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = A83E131316DA1D7C00FA4930 /* lib */; };
 		A83E131516DA1D7C00FA4930 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = A83E131316DA1D7C00FA4930 /* lib */; };
+		A895D3CD16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
+		A895D3CE16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,7 @@
 		A83E12E216D9D9E400FA4930 /* 3rock.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3rock.scpt; sourceTree = "<group>"; };
 		A83E12E316D9D9E400FA4930 /* 3techno.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3techno.scpt; sourceTree = "<group>"; };
 		A83E131316DA1D7C00FA4930 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		A895D3CC16DA307A006927EE /* skip15.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = skip15.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,7 @@
 			children = (
 				A83E131316DA1D7C00FA4930 /* lib */,
 				A83E12CE16D9D9E400FA4930 /* 0.scpt */,
+				A895D3CC16DA307A006927EE /* skip15.scpt */,
 				A83E12CF16D9D9E400FA4930 /* 0blues.scpt */,
 				A83E12D016D9D9E400FA4930 /* 0country.scpt */,
 				A83E12D116D9D9E400FA4930 /* 0folk.scpt */,
@@ -353,6 +357,7 @@
 				A83E130C16D9D9E400FA4930 /* 3rock.scpt in Resources */,
 				A83E130E16D9D9E400FA4930 /* 3techno.scpt in Resources */,
 				A83E131416DA1D7C00FA4930 /* lib in Resources */,
+				A895D3CD16DA307A006927EE /* skip15.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +389,7 @@
 				A83E130D16D9D9E400FA4930 /* 3rock.scpt in Resources */,
 				A83E130F16D9D9E400FA4930 /* 3techno.scpt in Resources */,
 				A83E131516DA1D7C00FA4930 /* lib in Resources */,
+				A895D3CE16DA307A006927EE /* skip15.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

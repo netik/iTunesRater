@@ -255,6 +255,9 @@
 
 }
 
+- (IBAction)skip_15_seconds:(id)sender {
+    [self runScript:@"skip15"];
+}
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
