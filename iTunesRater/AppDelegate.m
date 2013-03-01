@@ -13,11 +13,31 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize songInfo;
+
+- (void) updateTrackInfo:(NSNotification *)notification {
+    NSDictionary *information = [notification userInfo];
+  //  NSLog(@"track information: %@", information);
+
+    if (([information valueForKey:@"Artist"] != NULL) &&
+        ([information valueForKey:@"Name"] != NULL)) {
+        [songInfo setStringValue:
+         [NSString stringWithFormat:@"%@ - %@", [information valueForKey:@"Artist"], [information valueForKey:@"Name"]]];
+    }
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSDistributedNotificationCenter *dnc = [NSDistributedNotificationCenter defaultCenter];
+    [dnc addObserver:self selector:@selector(updateTrackInfo:) name:@"com.apple.iTunes.playerInfo" object:nil];
+    
 }
+
+- (void) receiveNotification:(NSNotification *) notification {
+    if ([@"com.apple.iTunes.playerInfo" isEqualToString:@"com.apple.iTunes.playerInfo"]) {
+        NSLog (@"Successfully received the test notification!");
+    }}
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "net.retina.iTunesRater" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
@@ -135,9 +155,8 @@
 }
 
 - (void)runScript:(NSString *)script {
-    NSLog(@"Running script \"%@\"",script);
+//    NSLog(@"Running script \"%@\"",script);
     NSString* path = [[NSBundle mainBundle] pathForResource:script ofType:@"scpt"];
-    NSLog(@"%@",path);
 
     NSURL* url = [NSURL fileURLWithPath:path];
     NSDictionary* errors = [NSDictionary dictionary];

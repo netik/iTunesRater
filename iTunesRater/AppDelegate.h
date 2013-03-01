@@ -47,5 +47,7 @@
 
 - (void) runScript:(NSString *)script;
 
+@property (weak) IBOutlet NSTextField *songInfo;
+
 @end
 
