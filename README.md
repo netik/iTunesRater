@@ -15,11 +15,13 @@ There's also keyboard shortcuts!
 * right arrow - next song
 * left arrow - previous song
 * space - skip 15 seconds
-* Number keys (not keypad keys):
-** 0 - rate "no play"
-** 1 - rate 1
-** 2 - rate 2
-** 3 - rate 3
+* 0 - rate "no play"
+* 1 - rate 1
+* 2 - rate 2
+* 3 - rate 3
+
+I'm sorry the genee's are so strange. 
+I don't like some genres, so I've just not added buttons for them.
 
 All of this is done by having Cocoa call Applescript to talk to iTunes. At some point, I should probably rewrite this thing to use the scripting bridge. Oh well, thsi works. 
 
