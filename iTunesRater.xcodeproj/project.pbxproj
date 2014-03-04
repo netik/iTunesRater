@@ -74,6 +74,8 @@
 		A88523AF18C570ED005142DD /* next.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AC18C570ED005142DD /* next.scpt */; };
 		A88523B018C570ED005142DD /* previous.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AD18C570ED005142DD /* previous.scpt */; };
 		A88523B118C570ED005142DD /* previous.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AD18C570ED005142DD /* previous.scpt */; };
+		A88523B318C68D70005142DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88523B218C68D70005142DD /* Images.xcassets */; };
+		A88523B418C68D70005142DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88523B218C68D70005142DD /* Images.xcassets */; };
 		A895D3CD16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 		A895D3CE16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 /* End PBXBuildFile section */
@@ -137,6 +139,7 @@
 		A88523A518C56F21005142DD /* 3.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.scpt; sourceTree = "<group>"; };
 		A88523AC18C570ED005142DD /* next.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = next.scpt; sourceTree = "<group>"; };
 		A88523AD18C570ED005142DD /* previous.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = previous.scpt; sourceTree = "<group>"; };
+		A88523B218C68D70005142DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A895D3CC16DA307A006927EE /* skip15.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = skip15.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +207,7 @@
 		A83E122D16D9CC8500FA4930 /* iTunesRater */ = {
 			isa = PBXGroup;
 			children = (
+				A88523B218C68D70005142DD /* Images.xcassets */,
 				A83E123916D9CC8500FA4930 /* AppDelegate.h */,
 				A83E123A16D9CC8500FA4930 /* AppDelegate.m */,
 				A83E123C16D9CC8500FA4930 /* MainMenu.xib */,
@@ -367,6 +371,7 @@
 				A83E12F416D9D9E400FA4930 /* 0reggae.scpt in Resources */,
 				A83E12F616D9D9E400FA4930 /* 0rock.scpt in Resources */,
 				A83E12F816D9D9E400FA4930 /* 1hiphop.scpt in Resources */,
+				A88523B318C68D70005142DD /* Images.xcassets in Resources */,
 				A83E12FA16D9D9E400FA4930 /* 1metal.scpt in Resources */,
 				A83E12FC16D9D9E400FA4930 /* 1rock.scpt in Resources */,
 				A88523B018C570ED005142DD /* previous.scpt in Resources */,
@@ -406,6 +411,7 @@
 				A83E12F716D9D9E400FA4930 /* 0rock.scpt in Resources */,
 				A83E12F916D9D9E400FA4930 /* 1hiphop.scpt in Resources */,
 				A83E12FB16D9D9E400FA4930 /* 1metal.scpt in Resources */,
+				A88523B418C68D70005142DD /* Images.xcassets in Resources */,
 				A88523A718C56F21005142DD /* 1.scpt in Resources */,
 				A88523AF18C570ED005142DD /* next.scpt in Resources */,
 				A83E12FD16D9D9E400FA4930 /* 1rock.scpt in Resources */,
@@ -566,6 +572,7 @@
 		A83E125916D9CC8600FA4930 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
@@ -578,6 +585,7 @@
 		A83E125A16D9CC8600FA4930 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
