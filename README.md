@@ -37,9 +37,9 @@ Footnote
 
 My review process, let me show you it. 
 
-#. Download hundreds of songs.
-#. Put them into iTunes.
-#. Rate them from 0-3 and fix genres, as needed. (I never give a track a 3 or better on the first listen.)
-#. Go back, and listen to the tracks again that you've rated at 3. 
-#. Mark them 4 or 5 if they are really, really great. 
+1. Download hundreds of songs.
+2. Put them into iTunes.
+3. Rate them from 0-3 and fix genres, as needed. (I never give a track a 3 or better on the first listen.)
+4. Go back, and listen to the tracks again that you've rated at 3. 
+5. Mark them 4 or 5 if they are really, really great. 
 
