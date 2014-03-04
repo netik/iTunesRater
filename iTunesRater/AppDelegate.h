@@ -45,6 +45,15 @@
 - (IBAction)run_2_rock:(id)sender;
 - (IBAction)run_3_rock:(id)sender;
 
+- (IBAction)run_0_rate:(id)sender;
+- (IBAction)run_1_rate:(id)sender;
+- (IBAction)run_2_rate:(id)sender;
+- (IBAction)run_3_rate:(id)sender;
+
+- (IBAction)run_next:(id)sender;
+- (IBAction)run_previous:(id)sender;
+
+
 - (void) runScript:(NSString *)script;
 
 @property (weak) IBOutlet NSTextField *songInfo;

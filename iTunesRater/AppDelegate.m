@@ -273,6 +273,29 @@
     [self runScript:@"3rock"];
 
 }
+- (IBAction)run_0_rate:(id)sender {
+    [self runScript:@"0"];
+}
+
+- (IBAction)run_1_rate:(id)sender {
+    [self runScript:@"1"];
+}
+
+- (IBAction)run_2_rate:(id)sender {
+    [self runScript:@"2"];
+}
+
+- (IBAction)run_3_rate:(id)sender {
+    [self runScript:@"3"];
+}
+
+- (IBAction)run_next:(id)sender {
+    [self runScript:@"next"];
+}
+- (IBAction)run_previous:(id)sender {
+    [self runScript:@"previous"];
+}
+
 
 - (IBAction)skip_15_seconds:(id)sender {
     [self runScript:@"skip15"];

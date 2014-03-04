@@ -64,6 +64,16 @@
 		A83E130F16D9D9E400FA4930 /* 3techno.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A83E12E316D9D9E400FA4930 /* 3techno.scpt */; };
 		A83E131416DA1D7C00FA4930 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = A83E131316DA1D7C00FA4930 /* lib */; };
 		A83E131516DA1D7C00FA4930 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = A83E131316DA1D7C00FA4930 /* lib */; };
+		A88523A618C56F21005142DD /* 1.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A318C56F21005142DD /* 1.scpt */; };
+		A88523A718C56F21005142DD /* 1.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A318C56F21005142DD /* 1.scpt */; };
+		A88523A818C56F21005142DD /* 2.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A418C56F21005142DD /* 2.scpt */; };
+		A88523A918C56F21005142DD /* 2.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A418C56F21005142DD /* 2.scpt */; };
+		A88523AA18C56F21005142DD /* 3.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A518C56F21005142DD /* 3.scpt */; };
+		A88523AB18C56F21005142DD /* 3.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523A518C56F21005142DD /* 3.scpt */; };
+		A88523AE18C570ED005142DD /* next.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AC18C570ED005142DD /* next.scpt */; };
+		A88523AF18C570ED005142DD /* next.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AC18C570ED005142DD /* next.scpt */; };
+		A88523B018C570ED005142DD /* previous.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AD18C570ED005142DD /* previous.scpt */; };
+		A88523B118C570ED005142DD /* previous.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A88523AD18C570ED005142DD /* previous.scpt */; };
 		A895D3CD16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 		A895D3CE16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 /* End PBXBuildFile section */
@@ -122,6 +132,11 @@
 		A83E12E216D9D9E400FA4930 /* 3rock.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3rock.scpt; sourceTree = "<group>"; };
 		A83E12E316D9D9E400FA4930 /* 3techno.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3techno.scpt; sourceTree = "<group>"; };
 		A83E131316DA1D7C00FA4930 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		A88523A318C56F21005142DD /* 1.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.scpt; sourceTree = "<group>"; };
+		A88523A418C56F21005142DD /* 2.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.scpt; sourceTree = "<group>"; };
+		A88523A518C56F21005142DD /* 3.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.scpt; sourceTree = "<group>"; };
+		A88523AC18C570ED005142DD /* next.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = next.scpt; sourceTree = "<group>"; };
+		A88523AD18C570ED005142DD /* previous.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = previous.scpt; sourceTree = "<group>"; };
 		A895D3CC16DA307A006927EE /* skip15.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = skip15.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,10 +249,15 @@
 			children = (
 				A83E131316DA1D7C00FA4930 /* lib */,
 				A83E12CE16D9D9E400FA4930 /* 0.scpt */,
+				A88523A318C56F21005142DD /* 1.scpt */,
+				A88523A418C56F21005142DD /* 2.scpt */,
+				A88523A518C56F21005142DD /* 3.scpt */,
 				A895D3CC16DA307A006927EE /* skip15.scpt */,
 				A83E12CF16D9D9E400FA4930 /* 0blues.scpt */,
 				A83E12D016D9D9E400FA4930 /* 0country.scpt */,
 				A83E12D116D9D9E400FA4930 /* 0folk.scpt */,
+				A88523AC18C570ED005142DD /* next.scpt */,
+				A88523AD18C570ED005142DD /* previous.scpt */,
 				A83E12D216D9D9E400FA4930 /* 0hiphop.scpt */,
 				A83E12D316D9D9E400FA4930 /* 0jazz.scpt */,
 				A83E12D416D9D9E400FA4930 /* 0metal.scpt */,
@@ -305,7 +325,7 @@
 		A83E121C16D9CC8500FA4930 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "John Adams";
 			};
 			buildConfigurationList = A83E121F16D9CC8500FA4930 /* Build configuration list for PBXProject "iTunesRater" */;
@@ -336,8 +356,10 @@
 				A83E123E16D9CC8500FA4930 /* MainMenu.xib in Resources */,
 				A83E12E416D9D9E400FA4930 /* 0.scpt in Resources */,
 				A83E12E616D9D9E400FA4930 /* 0blues.scpt in Resources */,
+				A88523AA18C56F21005142DD /* 3.scpt in Resources */,
 				A83E12E816D9D9E400FA4930 /* 0country.scpt in Resources */,
 				A83E12EA16D9D9E400FA4930 /* 0folk.scpt in Resources */,
+				A88523A618C56F21005142DD /* 1.scpt in Resources */,
 				A83E12EC16D9D9E400FA4930 /* 0hiphop.scpt in Resources */,
 				A83E12EE16D9D9E400FA4930 /* 0jazz.scpt in Resources */,
 				A83E12F016D9D9E400FA4930 /* 0metal.scpt in Resources */,
@@ -347,15 +369,18 @@
 				A83E12F816D9D9E400FA4930 /* 1hiphop.scpt in Resources */,
 				A83E12FA16D9D9E400FA4930 /* 1metal.scpt in Resources */,
 				A83E12FC16D9D9E400FA4930 /* 1rock.scpt in Resources */,
+				A88523B018C570ED005142DD /* previous.scpt in Resources */,
 				A83E12FE16D9D9E400FA4930 /* 1techno.scpt in Resources */,
 				A83E130016D9D9E400FA4930 /* 2hiphop.scpt in Resources */,
 				A83E130216D9D9E400FA4930 /* 2metal.scpt in Resources */,
 				A83E130416D9D9E400FA4930 /* 2rock.scpt in Resources */,
 				A83E130616D9D9E400FA4930 /* 2techno.scpt in Resources */,
+				A88523AE18C570ED005142DD /* next.scpt in Resources */,
 				A83E130816D9D9E400FA4930 /* 3hiphop.scpt in Resources */,
 				A83E130A16D9D9E400FA4930 /* 3metal.scpt in Resources */,
 				A83E130C16D9D9E400FA4930 /* 3rock.scpt in Resources */,
 				A83E130E16D9D9E400FA4930 /* 3techno.scpt in Resources */,
+				A88523A818C56F21005142DD /* 2.scpt in Resources */,
 				A83E131416DA1D7C00FA4930 /* lib in Resources */,
 				A895D3CD16DA307A006927EE /* skip15.scpt in Resources */,
 			);
@@ -369,15 +394,20 @@
 				A83E12E516D9D9E400FA4930 /* 0.scpt in Resources */,
 				A83E12E716D9D9E400FA4930 /* 0blues.scpt in Resources */,
 				A83E12E916D9D9E400FA4930 /* 0country.scpt in Resources */,
+				A88523B118C570ED005142DD /* previous.scpt in Resources */,
 				A83E12EB16D9D9E400FA4930 /* 0folk.scpt in Resources */,
+				A88523AB18C56F21005142DD /* 3.scpt in Resources */,
 				A83E12ED16D9D9E400FA4930 /* 0hiphop.scpt in Resources */,
 				A83E12EF16D9D9E400FA4930 /* 0jazz.scpt in Resources */,
+				A88523A918C56F21005142DD /* 2.scpt in Resources */,
 				A83E12F116D9D9E400FA4930 /* 0metal.scpt in Resources */,
 				A83E12F316D9D9E400FA4930 /* 0punk.scpt in Resources */,
 				A83E12F516D9D9E400FA4930 /* 0reggae.scpt in Resources */,
 				A83E12F716D9D9E400FA4930 /* 0rock.scpt in Resources */,
 				A83E12F916D9D9E400FA4930 /* 1hiphop.scpt in Resources */,
 				A83E12FB16D9D9E400FA4930 /* 1metal.scpt in Resources */,
+				A88523A718C56F21005142DD /* 1.scpt in Resources */,
+				A88523AF18C570ED005142DD /* next.scpt in Resources */,
 				A83E12FD16D9D9E400FA4930 /* 1rock.scpt in Resources */,
 				A83E12FF16D9D9E400FA4930 /* 1techno.scpt in Resources */,
 				A83E130116D9D9E400FA4930 /* 2hiphop.scpt in Resources */,
@@ -480,7 +510,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -513,7 +542,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
