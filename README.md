@@ -31,3 +31,15 @@ I use this to go through the SXSW torrent. Use at your own risk.
 
 Thanks to jwz for the Applescripts.
 Tested with iTunes 11.0.2 and Mac OS X 10.9.2. Compile target is set for > 10.8
+
+Footnote
+==============
+
+My review process, let me show you it. 
+
+#. Download hundreds of songs.
+#. Put them into iTunes.
+#. Rate them from 0-3 and fix genres, as needed. (I never give a track a 3 or better on the first listen.)
+#. Go back, and listen to the tracks again that you've rated at 3. 
+#. Mark them 4 or 5 if they are really, really great. 
+
