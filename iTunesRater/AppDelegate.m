@@ -15,6 +15,8 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize songInfo;
 
+id eventMonitor;
+
 - (void) updateTrackInfo:(NSNotification *)notification {
     NSDictionary *information = [notification userInfo];
   //  NSLog(@"track information: %@", information);
@@ -26,12 +28,203 @@
     }
 }
 
+- (void)runScript:(NSString *)script {
+    //    NSLog(@"Running script \"%@\"",script);
+    NSString* path = [[NSBundle mainBundle] pathForResource:script ofType:@"scpt"];
+    
+    NSURL* url = [NSURL fileURLWithPath:path];
+    NSDictionary* errors = [NSDictionary dictionary];
+    
+    NSAppleScript* appleScript =
+    [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
+    [appleScript executeAndReturnError:nil];
+    /*
+     NSString *question = NSLocalizedString(@"Error when executing Applescript", @"Applescript error question message");
+     NSString *okButton = NSLocalizedString(@"Ok", @"Ok button title");
+     
+     NSAlert *alert = [[NSAlert alloc] init];
+     [alert setMessageText:question];
+     [alert addButtonWithTitle:okButton];
+     
+     NSInteger answer = [alert runModal];
+     */
+    
+}
+
+- (IBAction)run_0_nogenre:(id)sender {
+    [self runScript:@"0"];
+}
+
+
+- (IBAction)run_0_blues:(id)sender {
+    [self runScript:@"0blues"];
+}
+
+- (IBAction)run_0_country:(id)sender {
+    [self runScript:@"0country"];
+}
+
+- (IBAction)run_0_folk:(id)sender {
+    [self runScript:@"0folk"];
+}
+
+- (IBAction)run_0_hiphop:(id)sender {
+    [self runScript:@"0hiphop"];
+}
+
+- (IBAction)run_0_jazz:(id)sender {
+    [self runScript:@"0jazz"];
+}
+
+- (IBAction)run_0_metal:(id)sender {
+    [self runScript:@"0metal"];
+    
+}
+
+- (IBAction)run_0_punk:(id)sender {
+    [self runScript:@"0punk"];
+    
+}
+
+- (IBAction)run_0_reggae:(id)sender {
+    [self runScript:@"0reggae"];
+    
+}
+
+- (IBAction)run_0_rock:(id)sender {
+    [self runScript:@"0rock"];
+    
+}
+
+- (IBAction)run_1_techno:(id)sender {
+    [self runScript:@"1techno"];
+}
+
+- (IBAction)run_2_techno:(id)sender {
+    [self runScript:@"2techno"];
+}
+
+- (IBAction)run_3_techno:(id)sender {
+    [self runScript:@"3techno"];
+}
+
+- (IBAction)run_1_hiphop:(id)sender {
+    [self runScript:@"1hiphop"];
+}
+
+- (IBAction)run_2_hiphop:(id)sender {
+    [self runScript:@"2hiphop"];
+}
+
+- (IBAction)run_3_hiphop:(id)sender {
+    [self runScript:@"3hiphop"];
+}
+
+- (IBAction)run_1_metal:(id)sender {
+    [self runScript:@"1metal"];
+    
+}
+
+- (IBAction)run_2_metal:(id)sender {
+    [self runScript:@"2metal"];
+}
+
+- (IBAction)run_3_metal:(id)sender {
+    [self runScript:@"3metal"];
+}
+
+- (IBAction)run_1_rock:(id)sender {
+    [self runScript:@"1rock"];
+    
+}
+
+- (IBAction)run_2_rock:(id)sender {
+    [self runScript:@"2rock"];
+    
+}
+
+- (IBAction)run_3_rock:(id)sender {
+    [self runScript:@"3rock"];
+    
+}
+- (IBAction)run_0_rate:(id)sender {
+    [self runScript:@"0"];
+}
+
+- (IBAction)run_1_rate:(id)sender {
+    [self runScript:@"1"];
+}
+
+- (IBAction)run_2_rate:(id)sender {
+    [self runScript:@"2"];
+}
+
+- (IBAction)run_3_rate:(id)sender {
+    [self runScript:@"3"];
+}
+
+- (IBAction)run_next:(id)sender {
+    [self runScript:@"next"];
+}
+- (IBAction)run_previous:(id)sender {
+    [self runScript:@"previous"];
+}
+
+
+- (IBAction)skip_15_seconds:(id)sender {
+    [self runScript:@"skip15"];
+}
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     NSDistributedNotificationCenter *dnc = [NSDistributedNotificationCenter defaultCenter];
     [dnc addObserver:self selector:@selector(updateTrackInfo:) name:@"com.apple.iTunes.playerInfo" object:nil];
     
+    // keypress handler
+    NSEvent* (^handler)(NSEvent*) = ^(NSEvent *theEvent) {
+        NSWindow *targetWindow = theEvent.window;
+            if (targetWindow != self.window) {
+                return theEvent;
+            }
+        
+            NSEvent *result = theEvent;
+            // if you need to debug keystrongs, uncomment this... 
+            //NSLog(@"event monitor: %@", theEvent);
+            switch(theEvent.keyCode) { // 0
+                case 29: // 0
+                    [self run_0_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 18: // 1
+                    [self run_1_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 19: // 2
+                    [self run_2_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 20: // 3
+                    [self run_3_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 49: // spacebar
+                    [self skip_15_seconds:targetWindow];
+                    result = nil;
+                    break;
+                case 124: // right
+                    [self run_next:targetWindow];
+                    result = nil;
+                    break;
+                case 123: // left
+                    [self run_previous:targetWindow];
+                    result = nil;
+                    break;
+            }
+            return result;
+        };
+    eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:handler];
 }
 
 - (void) receiveNotification:(NSNotification *) notification {
@@ -154,152 +347,6 @@
     }
 }
 
-- (void)runScript:(NSString *)script {
-//    NSLog(@"Running script \"%@\"",script);
-    NSString* path = [[NSBundle mainBundle] pathForResource:script ofType:@"scpt"];
-
-    NSURL* url = [NSURL fileURLWithPath:path];
-    NSDictionary* errors = [NSDictionary dictionary];
-    
-    NSAppleScript* appleScript =
-        [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
-            [appleScript executeAndReturnError:nil];
-    /*
-    NSString *question = NSLocalizedString(@"Error when executing Applescript", @"Applescript error question message");
-    NSString *okButton = NSLocalizedString(@"Ok", @"Ok button title");
-
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:question];
-    [alert addButtonWithTitle:okButton];
-    
-    NSInteger answer = [alert runModal];
-     */
-    
-}
-
-- (IBAction)run_0_nogenre:(id)sender {
-    [self runScript:@"0"];
-}
-
-
-- (IBAction)run_0_blues:(id)sender {
-    [self runScript:@"0blues"];
-}
-
-- (IBAction)run_0_country:(id)sender {
-    [self runScript:@"0country"];
-}
-
-- (IBAction)run_0_folk:(id)sender {
-    [self runScript:@"0folk"];
-}
-
-- (IBAction)run_0_hiphop:(id)sender {
-    [self runScript:@"0hiphop"];
-}
-
-- (IBAction)run_0_jazz:(id)sender {
-    [self runScript:@"0jazz"];
-}
-
-- (IBAction)run_0_metal:(id)sender {
-    [self runScript:@"0metal"];
-
-}
-
-- (IBAction)run_0_punk:(id)sender {
-    [self runScript:@"0punk"];
-
-}
-
-- (IBAction)run_0_reggae:(id)sender {
-    [self runScript:@"0reggae"];
-
-}
-
-- (IBAction)run_0_rock:(id)sender {
-    [self runScript:@"0rock"];
-
-}
-
-- (IBAction)run_1_techno:(id)sender {
-    [self runScript:@"1techno"];
-}
-
-- (IBAction)run_2_techno:(id)sender {
-    [self runScript:@"2techno"];
-}
-
-- (IBAction)run_3_techno:(id)sender {
-    [self runScript:@"3techno"];
-}
-
-- (IBAction)run_1_hiphop:(id)sender {
-    [self runScript:@"1hiphop"];
-}
-
-- (IBAction)run_2_hiphop:(id)sender {
-    [self runScript:@"2hiphop"];
-}
-
-- (IBAction)run_3_hiphop:(id)sender {
-    [self runScript:@"3hiphop"];
-}
-
-- (IBAction)run_1_metal:(id)sender {
-    [self runScript:@"1metal"];
-
-}
-
-- (IBAction)run_2_metal:(id)sender {
-    [self runScript:@"2metal"];
-}
-
-- (IBAction)run_3_metal:(id)sender {
-    [self runScript:@"3metal"];
-}
-
-- (IBAction)run_1_rock:(id)sender {
-    [self runScript:@"1rock"];
-
-}
-
-- (IBAction)run_2_rock:(id)sender {
-    [self runScript:@"2rock"];
-
-}
-
-- (IBAction)run_3_rock:(id)sender {
-    [self runScript:@"3rock"];
-
-}
-- (IBAction)run_0_rate:(id)sender {
-    [self runScript:@"0"];
-}
-
-- (IBAction)run_1_rate:(id)sender {
-    [self runScript:@"1"];
-}
-
-- (IBAction)run_2_rate:(id)sender {
-    [self runScript:@"2"];
-}
-
-- (IBAction)run_3_rate:(id)sender {
-    [self runScript:@"3"];
-}
-
-- (IBAction)run_next:(id)sender {
-    [self runScript:@"next"];
-}
-- (IBAction)run_previous:(id)sender {
-    [self runScript:@"previous"];
-}
-
-
-- (IBAction)skip_15_seconds:(id)sender {
-    [self runScript:@"skip15"];
-}
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
@@ -346,5 +393,7 @@
 
     return NSTerminateNow;
 }
+
+
 
 @end

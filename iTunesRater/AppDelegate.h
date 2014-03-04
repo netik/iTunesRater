@@ -53,7 +53,6 @@
 - (IBAction)run_next:(id)sender;
 - (IBAction)run_previous:(id)sender;
 
-
 - (void) runScript:(NSString *)script;
 
 @property (weak) IBOutlet NSTextField *songInfo;
