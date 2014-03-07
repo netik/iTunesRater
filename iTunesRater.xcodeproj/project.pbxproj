@@ -78,6 +78,10 @@
 		A88523B418C68D70005142DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88523B218C68D70005142DD /* Images.xcassets */; };
 		A895D3CD16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
 		A895D3CE16DA307A006927EE /* skip15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A895D3CC16DA307A006927EE /* skip15.scpt */; };
+		A8A9C93C18C957A600383908 /* 4.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A8A9C93A18C957A600383908 /* 4.scpt */; };
+		A8A9C93D18C957A600383908 /* 4.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A8A9C93A18C957A600383908 /* 4.scpt */; };
+		A8A9C93E18C957A600383908 /* 5.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A8A9C93B18C957A600383908 /* 5.scpt */; };
+		A8A9C93F18C957A600383908 /* 5.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A8A9C93B18C957A600383908 /* 5.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,8 @@
 		A88523AD18C570ED005142DD /* previous.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = previous.scpt; sourceTree = "<group>"; };
 		A88523B218C68D70005142DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A895D3CC16DA307A006927EE /* skip15.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = skip15.scpt; sourceTree = "<group>"; };
+		A8A9C93A18C957A600383908 /* 4.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.scpt; sourceTree = "<group>"; };
+		A8A9C93B18C957A600383908 /* 5.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +262,8 @@
 				A88523A318C56F21005142DD /* 1.scpt */,
 				A88523A418C56F21005142DD /* 2.scpt */,
 				A88523A518C56F21005142DD /* 3.scpt */,
+				A8A9C93A18C957A600383908 /* 4.scpt */,
+				A8A9C93B18C957A600383908 /* 5.scpt */,
 				A895D3CC16DA307A006927EE /* skip15.scpt */,
 				A83E12CF16D9D9E400FA4930 /* 0blues.scpt */,
 				A83E12D016D9D9E400FA4930 /* 0country.scpt */,
@@ -365,8 +373,10 @@
 				A83E12EA16D9D9E400FA4930 /* 0folk.scpt in Resources */,
 				A88523A618C56F21005142DD /* 1.scpt in Resources */,
 				A83E12EC16D9D9E400FA4930 /* 0hiphop.scpt in Resources */,
+				A8A9C93E18C957A600383908 /* 5.scpt in Resources */,
 				A83E12EE16D9D9E400FA4930 /* 0jazz.scpt in Resources */,
 				A83E12F016D9D9E400FA4930 /* 0metal.scpt in Resources */,
+				A8A9C93C18C957A600383908 /* 4.scpt in Resources */,
 				A83E12F216D9D9E400FA4930 /* 0punk.scpt in Resources */,
 				A83E12F416D9D9E400FA4930 /* 0reggae.scpt in Resources */,
 				A83E12F616D9D9E400FA4930 /* 0rock.scpt in Resources */,
@@ -397,6 +407,7 @@
 			files = (
 				A83E125216D9CC8600FA4930 /* InfoPlist.strings in Resources */,
 				A83E12E516D9D9E400FA4930 /* 0.scpt in Resources */,
+				A8A9C93D18C957A600383908 /* 4.scpt in Resources */,
 				A83E12E716D9D9E400FA4930 /* 0blues.scpt in Resources */,
 				A83E12E916D9D9E400FA4930 /* 0country.scpt in Resources */,
 				A88523B118C570ED005142DD /* previous.scpt in Resources */,
@@ -416,6 +427,7 @@
 				A88523AF18C570ED005142DD /* next.scpt in Resources */,
 				A83E12FD16D9D9E400FA4930 /* 1rock.scpt in Resources */,
 				A83E12FF16D9D9E400FA4930 /* 1techno.scpt in Resources */,
+				A8A9C93F18C957A600383908 /* 5.scpt in Resources */,
 				A83E130116D9D9E400FA4930 /* 2hiphop.scpt in Resources */,
 				A83E130316D9D9E400FA4930 /* 2metal.scpt in Resources */,
 				A83E130516D9D9E400FA4930 /* 2rock.scpt in Resources */,

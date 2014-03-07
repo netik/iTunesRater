@@ -49,6 +49,8 @@
 - (IBAction)run_1_rate:(id)sender;
 - (IBAction)run_2_rate:(id)sender;
 - (IBAction)run_3_rate:(id)sender;
+- (IBAction)run_4_rate:(id)sender;
+- (IBAction)run_5_rate:(id)sender;
 
 - (IBAction)run_next:(id)sender;
 - (IBAction)run_previous:(id)sender;

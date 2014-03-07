@@ -163,6 +163,14 @@ id eventMonitor;
     [self runScript:@"3"];
 }
 
+- (IBAction)run_4_rate:(id)sender {
+    [self runScript:@"4"];
+}
+
+- (IBAction)run_5_rate:(id)sender {
+    [self runScript:@"5"];
+}
+
 - (IBAction)run_next:(id)sender {
     [self runScript:@"next"];
 }
@@ -207,6 +215,14 @@ id eventMonitor;
                     break;
                 case 20: // 3
                     [self run_3_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 21: // 4
+                    [self run_4_rate:targetWindow];
+                    result = nil;
+                    break;
+                case 22: // 5
+                    [self run_5_rate:targetWindow];
                     result = nil;
                     break;
                 case 49: // spacebar
