@@ -21,8 +21,11 @@
 
 - (IBAction)run_0_blues:(id)sender;
 - (IBAction)run_0_country:(id)sender;
+- (IBAction)run_0_ebm:(id)sender;
+- (IBAction)run_0_electro:(id)sender;
 - (IBAction)run_0_folk:(id)sender;
 - (IBAction)run_0_hiphop:(id)sender;
+- (IBAction)run_0_industrial:(id)sender;
 - (IBAction)run_0_jazz:(id)sender;
 - (IBAction)run_0_metal:(id)sender;
 - (IBAction)run_0_punk:(id)sender;
@@ -44,6 +47,18 @@
 - (IBAction)run_1_rock:(id)sender;
 - (IBAction)run_2_rock:(id)sender;
 - (IBAction)run_3_rock:(id)sender;
+
+- (IBAction)run_1_ebm:(id)sender;
+- (IBAction)run_2_ebm:(id)sender;
+- (IBAction)run_3_ebm:(id)sender;
+
+- (IBAction)run_1_electro:(id)sender;
+- (IBAction)run_2_electro:(id)sender;
+- (IBAction)run_3_electro:(id)sender;
+
+- (IBAction)run_1_industrial:(id)sender;
+- (IBAction)run_2_industrial:(id)sender;
+- (IBAction)run_3_industrial:(id)sender;
 
 - (IBAction)run_0_rate:(id)sender;
 - (IBAction)run_1_rate:(id)sender;

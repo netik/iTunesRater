@@ -117,7 +117,7 @@ id eventMonitor;
 }
 
 - (IBAction)run_3_ebm:(id)sender {
-    [self runScript:@"3electro-industrial"];
+    [self runScript:@"3ebm"];
 }
 
 - (IBAction)run_1_electro:(id)sender {
