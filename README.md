@@ -4,7 +4,7 @@ iTunesRater
 Cocoa+Applescript dialogbox to quickly go through your catalog and rate it.
 Great for use with things like the SXSW Torrent (www.sxswtorrent.com) and other times when you need to rate a ton of music, really quickly.
 
-[NoiNote: I decided that on my little MBP13(classic) that a huge window was in the way. Also, I wanted it to work with music I had listened to, genre-fied and previous rated so I could see if I should bump things up or down or if the genre was wrong. So I made tweaks like a tiny window with genre & rating, and also allowed 3.5 ratings that didn’t have to skip, etc.]
+[NoiNote: I decided that on my little MBP13(classic) that a huge window was in the way. Also, I wanted it to work with music I had listened to, genre-fied and previously rated so I could see if I should bump things up or down or if the genre was wrong. So I made tweaks like a tiny window with genre & rating, and also allowed 3.5 ratings that didn’t have to skip, etc.]
 
 What this code does is the following:
 
@@ -46,4 +46,4 @@ My review process, let me show you it.
 4. Go back, and listen to the tracks again that you've rated at 3. 
 5. Mark them 4 or 5 if they are really, really great. 
 
-[NN: I agree with this process now, even with genres I like. So, might make 4noskip and 5noskip scripts (which would allow re-rating while listening—like when I though a track was cool, but it goes on too long and becomes to repetitive. I had to tweak the main apple script to toss the next track into the IF test, BTW, to avoid skipage.]
+[NN: I agree with this process now, even with genres I like. So, might make 4noskip and 5noskip scripts (which would allow re-rating while listening—like when I thought a track was cool, but it goes on too long and becomes to repetitive. I had to tweak the main apple script to toss the next track into the IF test, BTW, to avoid skipage.]
