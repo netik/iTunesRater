@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6039D70719B45B4600B725F1 /* 0industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FA19B45B4600B725F1 /* 0industrial.scpt */; };
+		6039D70819B45B4600B725F1 /* 0electro-industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FB19B45B4600B725F1 /* 0electro-industrial.scpt */; };
+		6039D70919B45B4600B725F1 /* 0ebm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FC19B45B4600B725F1 /* 0ebm.scpt */; };
+		6039D70A19B45B4600B725F1 /* 3ebm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FD19B45B4600B725F1 /* 3ebm.scpt */; };
+		6039D70B19B45B4600B725F1 /* 2ebm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FE19B45B4600B725F1 /* 2ebm.scpt */; };
+		6039D70C19B45B4600B725F1 /* 2electro-industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D6FF19B45B4600B725F1 /* 2electro-industrial.scpt */; };
+		6039D70D19B45B4600B725F1 /* 1ebm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70019B45B4600B725F1 /* 1ebm.scpt */; };
+		6039D70E19B45B4600B725F1 /* 1industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70119B45B4600B725F1 /* 1industrial.scpt */; };
+		6039D70F19B45B4600B725F1 /* 1electro-industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70219B45B4600B725F1 /* 1electro-industrial.scpt */; };
+		6039D71019B45B4600B725F1 /* 3electro-industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70319B45B4600B725F1 /* 3electro-industrial.scpt */; };
+		6039D71119B45B4600B725F1 /* skipback15.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70419B45B4600B725F1 /* skipback15.scpt */; };
+		6039D71219B45B4600B725F1 /* 2industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70519B45B4600B725F1 /* 2industrial.scpt */; };
+		6039D71319B45B4600B725F1 /* 3industrial.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 6039D70619B45B4600B725F1 /* 3industrial.scpt */; };
 		A83E122816D9CC8500FA4930 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E122716D9CC8500FA4930 /* Cocoa.framework */; };
 		A83E123216D9CC8500FA4930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A83E123016D9CC8500FA4930 /* InfoPlist.strings */; };
 		A83E123416D9CC8500FA4930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83E123316D9CC8500FA4930 /* main.m */; };
@@ -14,7 +27,6 @@
 		A83E123B16D9CC8500FA4930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A83E123A16D9CC8500FA4930 /* AppDelegate.m */; };
 		A83E123E16D9CC8500FA4930 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83E123C16D9CC8500FA4930 /* MainMenu.xib */; };
 		A83E124116D9CC8500FA4930 /* iTunesRater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A83E123F16D9CC8500FA4930 /* iTunesRater.xcdatamodeld */; };
-		A83E124916D9CC8600FA4930 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E124816D9CC8600FA4930 /* SenTestingKit.framework */; };
 		A83E124A16D9CC8600FA4930 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E122716D9CC8500FA4930 /* Cocoa.framework */; };
 		A83E125216D9CC8600FA4930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A83E125016D9CC8600FA4930 /* InfoPlist.strings */; };
 		A83E125516D9CC8600FA4930 /* iTunesRaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A83E125416D9CC8600FA4930 /* iTunesRaterTests.m */; };
@@ -95,6 +107,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6039D6FA19B45B4600B725F1 /* 0industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0industrial.scpt; sourceTree = "<group>"; };
+		6039D6FB19B45B4600B725F1 /* 0electro-industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0electro-industrial.scpt"; sourceTree = "<group>"; };
+		6039D6FC19B45B4600B725F1 /* 0ebm.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0ebm.scpt; sourceTree = "<group>"; };
+		6039D6FD19B45B4600B725F1 /* 3ebm.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3ebm.scpt; sourceTree = "<group>"; };
+		6039D6FE19B45B4600B725F1 /* 2ebm.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2ebm.scpt; sourceTree = "<group>"; };
+		6039D6FF19B45B4600B725F1 /* 2electro-industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2electro-industrial.scpt"; sourceTree = "<group>"; };
+		6039D70019B45B4600B725F1 /* 1ebm.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1ebm.scpt; sourceTree = "<group>"; };
+		6039D70119B45B4600B725F1 /* 1industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1industrial.scpt; sourceTree = "<group>"; };
+		6039D70219B45B4600B725F1 /* 1electro-industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1electro-industrial.scpt"; sourceTree = "<group>"; };
+		6039D70319B45B4600B725F1 /* 3electro-industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3electro-industrial.scpt"; sourceTree = "<group>"; };
+		6039D70419B45B4600B725F1 /* skipback15.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = skipback15.scpt; sourceTree = "<group>"; };
+		6039D70519B45B4600B725F1 /* 2industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2industrial.scpt; sourceTree = "<group>"; };
+		6039D70619B45B4600B725F1 /* 3industrial.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3industrial.scpt; sourceTree = "<group>"; };
 		A83E122416D9CC8500FA4930 /* iTunesRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83E122716D9CC8500FA4930 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A83E122A16D9CC8500FA4930 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -109,8 +134,7 @@
 		A83E123A16D9CC8500FA4930 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A83E123D16D9CC8500FA4930 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A83E124016D9CC8500FA4930 /* iTunesRater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesRater.xcdatamodel; sourceTree = "<group>"; };
-		A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesRaterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A83E124816D9CC8600FA4930 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesRaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83E124F16D9CC8600FA4930 /* iTunesRaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunesRaterTests-Info.plist"; sourceTree = "<group>"; };
 		A83E125116D9CC8600FA4930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A83E125316D9CC8600FA4930 /* iTunesRaterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunesRaterTests.h; sourceTree = "<group>"; };
@@ -162,7 +186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A83E124916D9CC8600FA4930 /* SenTestingKit.framework in Frameworks */,
 				A83E124A16D9CC8600FA4930 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				A83E122416D9CC8500FA4930 /* iTunesRater.app */,
-				A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */,
+				A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				A83E122716D9CC8500FA4930 /* Cocoa.framework */,
-				A83E124816D9CC8600FA4930 /* SenTestingKit.framework */,
 				A83E122916D9CC8500FA4930 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -257,6 +279,19 @@
 		A83E12A016D9D1A600FA4930 /* Applescripts */ = {
 			isa = PBXGroup;
 			children = (
+				6039D6FA19B45B4600B725F1 /* 0industrial.scpt */,
+				6039D6FB19B45B4600B725F1 /* 0electro-industrial.scpt */,
+				6039D6FC19B45B4600B725F1 /* 0ebm.scpt */,
+				6039D6FD19B45B4600B725F1 /* 3ebm.scpt */,
+				6039D6FE19B45B4600B725F1 /* 2ebm.scpt */,
+				6039D6FF19B45B4600B725F1 /* 2electro-industrial.scpt */,
+				6039D70019B45B4600B725F1 /* 1ebm.scpt */,
+				6039D70119B45B4600B725F1 /* 1industrial.scpt */,
+				6039D70219B45B4600B725F1 /* 1electro-industrial.scpt */,
+				6039D70319B45B4600B725F1 /* 3electro-industrial.scpt */,
+				6039D70419B45B4600B725F1 /* skipback15.scpt */,
+				6039D70519B45B4600B725F1 /* 2industrial.scpt */,
+				6039D70619B45B4600B725F1 /* 3industrial.scpt */,
 				A83E131316DA1D7C00FA4930 /* lib */,
 				A83E12CE16D9D9E400FA4930 /* 0.scpt */,
 				A88523A318C56F21005142DD /* 1.scpt */,
@@ -328,8 +363,8 @@
 			);
 			name = iTunesRaterTests;
 			productName = iTunesRaterTests;
-			productReference = A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -337,6 +372,7 @@
 		A83E121C16D9CC8500FA4930 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "John Adams";
 			};
@@ -365,6 +401,7 @@
 			files = (
 				A83E123216D9CC8500FA4930 /* InfoPlist.strings in Resources */,
 				A83E123816D9CC8500FA4930 /* Credits.rtf in Resources */,
+				6039D70D19B45B4600B725F1 /* 1ebm.scpt in Resources */,
 				A83E123E16D9CC8500FA4930 /* MainMenu.xib in Resources */,
 				A83E12E416D9D9E400FA4930 /* 0.scpt in Resources */,
 				A83E12E616D9D9E400FA4930 /* 0blues.scpt in Resources */,
@@ -373,15 +410,21 @@
 				A83E12EA16D9D9E400FA4930 /* 0folk.scpt in Resources */,
 				A88523A618C56F21005142DD /* 1.scpt in Resources */,
 				A83E12EC16D9D9E400FA4930 /* 0hiphop.scpt in Resources */,
+				6039D71119B45B4600B725F1 /* skipback15.scpt in Resources */,
 				A8A9C93E18C957A600383908 /* 5.scpt in Resources */,
 				A83E12EE16D9D9E400FA4930 /* 0jazz.scpt in Resources */,
 				A83E12F016D9D9E400FA4930 /* 0metal.scpt in Resources */,
 				A8A9C93C18C957A600383908 /* 4.scpt in Resources */,
 				A83E12F216D9D9E400FA4930 /* 0punk.scpt in Resources */,
+				6039D71219B45B4600B725F1 /* 2industrial.scpt in Resources */,
+				6039D70719B45B4600B725F1 /* 0industrial.scpt in Resources */,
+				6039D70A19B45B4600B725F1 /* 3ebm.scpt in Resources */,
 				A83E12F416D9D9E400FA4930 /* 0reggae.scpt in Resources */,
 				A83E12F616D9D9E400FA4930 /* 0rock.scpt in Resources */,
 				A83E12F816D9D9E400FA4930 /* 1hiphop.scpt in Resources */,
+				6039D70819B45B4600B725F1 /* 0electro-industrial.scpt in Resources */,
 				A88523B318C68D70005142DD /* Images.xcassets in Resources */,
+				6039D70F19B45B4600B725F1 /* 1electro-industrial.scpt in Resources */,
 				A83E12FA16D9D9E400FA4930 /* 1metal.scpt in Resources */,
 				A83E12FC16D9D9E400FA4930 /* 1rock.scpt in Resources */,
 				A88523B018C570ED005142DD /* previous.scpt in Resources */,
@@ -390,9 +433,15 @@
 				A83E130216D9D9E400FA4930 /* 2metal.scpt in Resources */,
 				A83E130416D9D9E400FA4930 /* 2rock.scpt in Resources */,
 				A83E130616D9D9E400FA4930 /* 2techno.scpt in Resources */,
+				6039D70919B45B4600B725F1 /* 0ebm.scpt in Resources */,
+				6039D70B19B45B4600B725F1 /* 2ebm.scpt in Resources */,
 				A88523AE18C570ED005142DD /* next.scpt in Resources */,
+				6039D70C19B45B4600B725F1 /* 2electro-industrial.scpt in Resources */,
 				A83E130816D9D9E400FA4930 /* 3hiphop.scpt in Resources */,
 				A83E130A16D9D9E400FA4930 /* 3metal.scpt in Resources */,
+				6039D70E19B45B4600B725F1 /* 1industrial.scpt in Resources */,
+				6039D71019B45B4600B725F1 /* 3electro-industrial.scpt in Resources */,
+				6039D71319B45B4600B725F1 /* 3industrial.scpt in Resources */,
 				A83E130C16D9D9E400FA4930 /* 3rock.scpt in Resources */,
 				A83E130E16D9D9E400FA4930 /* 3techno.scpt in Resources */,
 				A88523A818C56F21005142DD /* 2.scpt in Resources */,
@@ -550,7 +599,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -576,7 +625,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -584,11 +633,14 @@
 		A83E125916D9CC8600FA4930 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRater/iTunesRater-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -597,11 +649,14 @@
 		A83E125A16D9CC8600FA4930 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRater/iTunesRater-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -612,13 +667,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRater.app/Contents/MacOS/iTunesRater";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRaterTests/iTunesRaterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -627,13 +684,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRater.app/Contents/MacOS/iTunesRater";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRaterTests/iTunesRaterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -647,7 +706,7 @@
 				A83E125716D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A83E125816D9CC8600FA4930 /* Build configuration list for PBXNativeTarget "iTunesRater" */ = {
 			isa = XCConfigurationList;
@@ -656,7 +715,7 @@
 				A83E125A16D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A83E125B16D9CC8600FA4930 /* Build configuration list for PBXNativeTarget "iTunesRaterTests" */ = {
 			isa = XCConfigurationList;
@@ -665,7 +724,7 @@
 				A83E125D16D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

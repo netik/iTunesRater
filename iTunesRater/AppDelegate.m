@@ -19,12 +19,18 @@ id eventMonitor;
 
 - (void) updateTrackInfo:(NSNotification *)notification {
     NSDictionary *information = [notification userInfo];
+    NSString *rating = NULL;
   //  NSLog(@"track information: %@", information);
 
     if (([information valueForKey:@"Artist"] != NULL) &&
         ([information valueForKey:@"Name"] != NULL)) {
+        if([information valueForKey:@"Rating"] == NULL){
+            rating=@"none";
+        } else {
+            rating=[information valueForKey:@"Rating"];
+        }
         [songInfo setStringValue:
-         [NSString stringWithFormat:@"%@ - %@", [information valueForKey:@"Artist"], [information valueForKey:@"Name"]]];
+         [NSString stringWithFormat:@"%@ - %@ •%@•rating: %@", [information valueForKey:@"Artist"], [information valueForKey:@"Name"], [information valueForKey:@"Genre"], rating]];
     }
 }
 
@@ -64,12 +70,24 @@ id eventMonitor;
     [self runScript:@"0country"];
 }
 
+- (IBAction)run_0_ebm:(id)sender {
+    [self runScript:@"0ebm"];
+}
+
+- (IBAction)run_0_electro:(id)sender {
+    [self runScript:@"0electro-industrial"];
+}
+
 - (IBAction)run_0_folk:(id)sender {
     [self runScript:@"0folk"];
 }
 
 - (IBAction)run_0_hiphop:(id)sender {
     [self runScript:@"0hiphop"];
+}
+
+- (IBAction)run_0_industrial:(id)sender {
+    [self runScript:@"0industrial"];
 }
 
 - (IBAction)run_0_jazz:(id)sender {
@@ -96,16 +114,28 @@ id eventMonitor;
     
 }
 
-- (IBAction)run_1_techno:(id)sender {
-    [self runScript:@"1techno"];
+- (IBAction)run_1_ebm:(id)sender {
+    [self runScript:@"1ebm"];
 }
 
-- (IBAction)run_2_techno:(id)sender {
-    [self runScript:@"2techno"];
+- (IBAction)run_2_ebm:(id)sender {
+    [self runScript:@"2ebm"];
 }
 
-- (IBAction)run_3_techno:(id)sender {
-    [self runScript:@"3techno"];
+- (IBAction)run_3_ebm:(id)sender {
+    [self runScript:@"3ebm"];
+}
+
+- (IBAction)run_1_electro:(id)sender {
+    [self runScript:@"1electro-industrial"];
+}
+
+- (IBAction)run_2_electro:(id)sender {
+    [self runScript:@"2electro-industrial"];
+}
+
+- (IBAction)run_3_electro:(id)sender {
+    [self runScript:@"3electro-industrial"];
 }
 
 - (IBAction)run_1_hiphop:(id)sender {
@@ -118,6 +148,19 @@ id eventMonitor;
 
 - (IBAction)run_3_hiphop:(id)sender {
     [self runScript:@"3hiphop"];
+}
+
+- (IBAction)run_1_industrial:(id)sender {
+    [self runScript:@"1industrial"];
+    
+}
+
+- (IBAction)run_2_industrial:(id)sender {
+    [self runScript:@"2industrial"];
+}
+
+- (IBAction)run_3_industrial:(id)sender {
+    [self runScript:@"3industrial"];
 }
 
 - (IBAction)run_1_metal:(id)sender {
@@ -183,6 +226,21 @@ id eventMonitor;
     [self runScript:@"skip15"];
 }
 
+- (IBAction)skipback_15_seconds:(id)sender {
+    [self runScript:@"skipback15"];
+}
+
+- (IBAction)run_1_techno:(id)sender {
+    [self runScript:@"1techno"];
+}
+
+- (IBAction)run_2_techno:(id)sender {
+    [self runScript:@"2techno"];
+}
+
+- (IBAction)run_3_techno:(id)sender {
+    [self runScript:@"3techno"];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
