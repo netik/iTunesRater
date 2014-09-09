@@ -176,6 +176,21 @@ id eventMonitor;
     [self runScript:@"3metal"];
 }
 
+- (IBAction)run_1_punk:(id)sender {
+    [self runScript:@"1punk"];
+    
+}
+
+- (IBAction)run_2_punk:(id)sender {
+    [self runScript:@"2punk"];
+    
+}
+
+- (IBAction)run_3_punk:(id)sender {
+    [self runScript:@"3punk"];
+    
+}
+
 - (IBAction)run_1_rock:(id)sender {
     [self runScript:@"1rock"];
     
@@ -230,6 +245,10 @@ id eventMonitor;
     [self runScript:@"skipback15"];
 }
 
+- (IBAction)run_0_techno:(id)sender {
+    [self runScript:@"0techno"];
+}
+
 - (IBAction)run_1_techno:(id)sender {
     [self runScript:@"1techno"];
 }
@@ -240,6 +259,14 @@ id eventMonitor;
 
 - (IBAction)run_3_techno:(id)sender {
     [self runScript:@"3techno"];
+}
+
+- (IBAction)run_35_rate:(id)sender {
+    [self runScript:@"3.5"];
+}
+
+- (IBAction)run_35noskip_rate:(id)sender {
+    [self runScript:@"3.5noskip"];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
