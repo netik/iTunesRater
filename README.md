@@ -47,3 +47,27 @@ My review process, let me show you it.
 5. Mark them 4 or 5 if they are really, really great. 
 
 [NN: I agree with this process now, even with genres I like. So, might make 4noskip and 5noskip scripts (which would allow re-rating while listening—like when I thought a track was cool, but it goes on too long and becomes to repetitive. I had to tweak the main apple script to toss the next track into the IF test, BTW, to avoid skipage.]
+
+Noi’s Wish List
+===============
+Overall More controllable features and more concise info in a small (resizeable/congifurable) window:
+
+Playback
+--------
+Have  the mini window act a bit more like a miniplayer so I do not have to look at the iTunes miniplayer to see the track’s status (I can probably do most of this):
+* Time remaining in song shown right
+* Time elapsed shown left
+* place in song filling the songInfo in background color (light green or configurable & red with less than 30s left)…
+* All ratings split(toggle)-switches with the second being "apply rating & no skip"
+
+Genre Wishes
+-----
+* Configurable Genre Pulldown
+* preselects previous genre if none assigned
+* genre pulldown drawn from iTL but you can add a new Genre if none apply
+* genre type in autocomplete
+
+Concise MetaData Wishes
+-----
+* Optional Album Art? Nah. Too much space, maybe a popup?
+* Field Summary? Shows if artwork, camelot key, etc. tags are filled in in compact iconography
