@@ -74,5 +74,7 @@
 
 @property (weak) IBOutlet NSTextField *songInfo;
 
+@property (weak) IBOutlet NSTextField *miniSongInfo;
+
 @end
 
