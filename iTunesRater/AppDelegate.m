@@ -19,12 +19,18 @@ id eventMonitor;
 
 - (void) updateTrackInfo:(NSNotification *)notification {
     NSDictionary *information = [notification userInfo];
+    NSString *rating = NULL;
   //  NSLog(@"track information: %@", information);
 
     if (([information valueForKey:@"Artist"] != NULL) &&
         ([information valueForKey:@"Name"] != NULL)) {
+        if([information valueForKey:@"Rating"] == NULL){
+            rating=@"none";
+        } else {
+            rating=[information valueForKey:@"Rating"];
+        }
         [songInfo setStringValue:
-         [NSString stringWithFormat:@"%@ - %@", [information valueForKey:@"Artist"], [information valueForKey:@"Name"]]];
+         [NSString stringWithFormat:@"%@ - %@ •%@•rating: %@", [information valueForKey:@"Artist"], [information valueForKey:@"Name"], [information valueForKey:@"Genre"], rating]];
     }
 }
 

@@ -27,7 +27,6 @@
 		A83E123B16D9CC8500FA4930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A83E123A16D9CC8500FA4930 /* AppDelegate.m */; };
 		A83E123E16D9CC8500FA4930 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83E123C16D9CC8500FA4930 /* MainMenu.xib */; };
 		A83E124116D9CC8500FA4930 /* iTunesRater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A83E123F16D9CC8500FA4930 /* iTunesRater.xcdatamodeld */; };
-		A83E124916D9CC8600FA4930 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E124816D9CC8600FA4930 /* SenTestingKit.framework */; };
 		A83E124A16D9CC8600FA4930 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E122716D9CC8500FA4930 /* Cocoa.framework */; };
 		A83E125216D9CC8600FA4930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A83E125016D9CC8600FA4930 /* InfoPlist.strings */; };
 		A83E125516D9CC8600FA4930 /* iTunesRaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A83E125416D9CC8600FA4930 /* iTunesRaterTests.m */; };
@@ -135,8 +134,7 @@
 		A83E123A16D9CC8500FA4930 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A83E123D16D9CC8500FA4930 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A83E124016D9CC8500FA4930 /* iTunesRater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesRater.xcdatamodel; sourceTree = "<group>"; };
-		A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesRaterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A83E124816D9CC8600FA4930 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesRaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83E124F16D9CC8600FA4930 /* iTunesRaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunesRaterTests-Info.plist"; sourceTree = "<group>"; };
 		A83E125116D9CC8600FA4930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A83E125316D9CC8600FA4930 /* iTunesRaterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunesRaterTests.h; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A83E124916D9CC8600FA4930 /* SenTestingKit.framework in Frameworks */,
 				A83E124A16D9CC8600FA4930 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				A83E122416D9CC8500FA4930 /* iTunesRater.app */,
-				A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */,
+				A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				A83E122716D9CC8500FA4930 /* Cocoa.framework */,
-				A83E124816D9CC8600FA4930 /* SenTestingKit.framework */,
 				A83E122916D9CC8500FA4930 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -367,8 +363,8 @@
 			);
 			name = iTunesRaterTests;
 			productName = iTunesRaterTests;
-			productReference = A83E124716D9CC8600FA4930 /* iTunesRaterTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = A83E124716D9CC8600FA4930 /* iTunesRaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -644,7 +640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRater/iTunesRater-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -660,7 +656,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRater/iTunesRater-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -671,13 +667,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRater.app/Contents/MacOS/iTunesRater";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRaterTests/iTunesRaterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -686,13 +684,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRater.app/Contents/MacOS/iTunesRater";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTunesRater/iTunesRater-Prefix.pch";
 				INFOPLIST_FILE = "iTunesRaterTests/iTunesRaterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -706,7 +706,7 @@
 				A83E125716D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A83E125816D9CC8600FA4930 /* Build configuration list for PBXNativeTarget "iTunesRater" */ = {
 			isa = XCConfigurationList;
@@ -715,7 +715,7 @@
 				A83E125A16D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A83E125B16D9CC8600FA4930 /* Build configuration list for PBXNativeTarget "iTunesRaterTests" */ = {
 			isa = XCConfigurationList;
@@ -724,7 +724,7 @@
 				A83E125D16D9CC8600FA4930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
